@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="36" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="0.99.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Thu Apr 16 15:09:25 2015
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">Kevin Yeh</m>
+<m key="dc.date">Thu Apr 16 01:12:31 2015
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="8" edit-time="50591" last-saved="1429214965" uid="b0649e24-e3fe-11e4-83d1-f86f3594fec5">
+<version id="8" started="1429164751" uid="7ad6068c-e474-11e4-83d1-f86f3594fec5" auto="0" top-xid="8"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="7" props="page-margin-footer:0.5in; page-margin-header:0.5in">
+<p style="Normal" xid="8"><c props="font-weight:bold">Paraphrasic Sentence Compression using Deep, Multi-lingual Phrase Alignments</c></p>
+<p style="Normal" xid="1"><c props="font-weight:bold"></c></p>
+<p style="Normal" xid="9"><c props="font-weight:normal">Although this allows more room for mistranslations and misinterpretations, it also explores more possibilities and, more importantly, opens avenues of combining two separate parallel corpora sharing a common language. (That is, a german word may only appear infrequently in the german corpus, but may be closely related to another phrase either by compression or expansion that is mapped together with the initial one using recursive/iterative alignment with another parallel corpus, in the example, russian) =&gt; Similar long phrases map together, similar short phrases map together, so two strict/specific/defined languages can miss the similarities of the two phrases because each has a defined context to be used in, but consecutive translations blur the lines of semantics and allow these phrases to be found, which can benefit compression while still producing satisfactory monolingual probability.</c></p>
+<p style="Normal" xid="10"><c props="font-weight:bold"></c></p>
+<p style="Normal" xid="30" props="text-align:left; dom-dir:ltr"><c>http://delivery.acm.org/10.1145/2110000/2107689/p84-napoles.pdf?ip=66.90.155.184&amp;id=2107689&amp;acc=OPEN&amp;key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&amp;CFID=501618716&amp;CFTOKEN=47240481&amp;__acm__=1429153846_bf808f671b310a05a89e67db80916eed</c></p>
+<p style="Normal" xid="32" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="35" props="text-align:left; dom-dir:ltr"><c>http://dl.acm.org/citation.cfm?id=2107689</c></p>
+<p style="Normal" xid="36" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="33" props="text-align:left; dom-dir:ltr"><c>http://www.cs.cmu.edu/~lingwang/microtopia/#overview</c></p>
+<p style="Normal" xid="31"><c props="font-weight:bold"></c></p>
+<p style="Normal" xid="13"><c props="font-weight:normal">Standard Bilingual Cyclical Phrase Alignment</c></p>
+<p style="Normal" xid="11"><c props="font-weight:normal">E1 =&gt; G1 =&gt; G2 =&gt; E2</c></p>
+<p style="Normal" xid="12"><c props="font-weight:bold"></c></p>
+<p style="Normal" xid="14"><c props="font-weight:normal">Multi-lingual Linear Phrase Alignment</c></p>
+<p style="Normal" xid="16"><c props="font-weight:normal">E1 =&gt; G1 =&gt; R1 =&gt; E2</c></p>
+<p style="Normal" xid="17"><c props="font-weight:normal"></c></p>
+<p style="Normal" xid="19"><c props="font-weight:normal">Multi-lingual Cyclical Phrase Alignment</c></p>
+<p style="Normal" xid="20"><c props="font-weight:normal">E1 =&gt; G1 =&gt; R1 =&gt; R2 =&gt; G2 =&gt; E2</c></p>
+<p style="Normal" xid="21"><c props="font-weight:normal"></c></p>
+<p style="Normal" xid="23"><c props="font-weight:normal">Multi-lingual Non-Linear Phrase Alignment</c></p>
+<p style="Normal" xid="24"><c props="font-weight:normal"></c><c props="font-weight:normal">E1 =&gt; G1 =&gt; G2 =&gt; R1 =&gt; E2</c></p>
+<p style="Normal" xid="25"><c props="font-weight:normal">E1 =&gt; G1 =&gt; G2 =&gt; R1 =&gt; R2 =&gt; E2</c></p>
+<p style="Normal" xid="27"><c props="font-weight:normal">E1 =&gt; G1 =&gt; G2 =&gt; R1 =&gt; R2 =&gt; G3 =&gt; E2</c></p>
+<p style="Normal" xid="28"><c props="font-weight:normal">etc.</c></p>
+<p style="Normal" xid="15"><c props="font-weight:bold"></c></p>
+<p style="Normal" xid="2"><c props="font-weight:normal">Future Work:</c></p>
+<p style="Normal" xid="4"><c props="font-weight:normal"></c></p>
+<p style="Normal" xid="5"><c props="font-weight:normal">considered extreme sentence compression using twitter parallel corpora</c></p>
+<p style="Normal" xid="6"><c props="font-weight:normal">also considered a reversal of this technique as a means of standardizing twitter statuses into forms that can be better parsed and labeled by standard linguistic analyzers (POS Taggers, PCFGs, everything) instead of specializing these processes into the exact domain</c></p>
+<p style="Normal" xid="29"><c props="font-weight:normal">However, parallel data with between twitter/microblog text and standard linguistic text (or just between two languages within twitter) is sparse and corpora building in the social space is still in its infancy stages.</c></p>
+</section>
+</abiword>
