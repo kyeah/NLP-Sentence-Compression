@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="50" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="0.99.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Sun Apr 19 01:59:22 2015
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">Kevin Yeh</m>
+<m key="dc.date">Sun Apr 19 01:59:22 2015
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="39" edit-time="16302" last-saved="1429426762" uid="8f5e25f8-b24c-11e4-82b2-eb658b15f96f">
+<version id="9" started="1423700322" uid="05e84b1e-b251-11e4-82b2-eb658b15f96f" auto="0" top-xid="4"/>
+<version id="39" started="1429412457" uid="9be97af4-e661-11e4-8dbb-ab6801e027f5" auto="0" top-xid="22"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; bgcolor:transparent; widows:2; font-style:normal; text-indent:0in; text-position:normal; margin-bottom:0pt; font-weight:normal; line-height:1.0; text-align:left; font-variant:normal; text-decoration:none; margin-right:0pt; font-size:12pt; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="3" props="page-margin-footer:0.5in; page-margin-header:0.5in">
+<p style="Normal" xid="4"><c props="text-decoration:underline">Kevin Yeh										   NLP HW #</c><c props="text-decoration:underline">4</c></p>
+<p style="Normal" xid="1"><c props="text-decoration:none"></c><c></c></p>
+<p style="Normal" xid="2" props="text-align:left"><c props="font-weight:bold; text-decoration:none; font-size:14pt">1. Paraphrastic Sentence Compression with a Character-based Metric: </c></p>
+<p style="Normal" xid="31" props="text-align:left"><c props="font-weight:bold; text-decoration:none; font-size:14pt">    Tightening without Deletion</c></p>
+<p style="Normal" xid="33"><c props="font-weight:bold; text-decoration:none; font-size:14pt"></c></p>
+<p style="Normal" xid="32"><c props="text-decoration:none; font-weight:normal; font-size:12pt">In this paper, Napoles et. al. present a character-based substitution approach to sentence compression using bilingual parallel corpora. The motivation for this method involves the strict constraints of deletion-based approaches, which leads to the methodological modification of sentences and, overall, abstract and robotic results. Instead, they highlight the use of paraphrases extracted from bilingual corpora and re-ranked using a novel monolingual heuristic to provide more intuitive and naturalistic summarizations of source text, for use in cases such as document simplification, mobile text, subtitling, and micro-blog constraint fitting. At a high level, the intuition behind their methods is such that shorter words can be chosen where possible, freeing up space for more content-filled words. Their results show that combined substitution and deletion compressions preserve more meaning in the same number of characters as deletion-only compressions.</c></p>
+<p style="Normal" xid="35"><c props="text-decoration:none; font-weight:normal; font-size:12pt"></c></p>
+<p style="Normal" xid="40"><c props="text-decoration:none; font-weight:normal; font-size:12pt">In generating paraphrases, the authors extract paraphrases from bilingual parallel corpora, treating any English phrases that share a common foreign phrase as potential paraphrases of each other. To rank candidates, they propose a two-step process: candidates are first ranked using the translation model probabilities p(e|f) and p(f|e), requiring the paraphrase to be of the same syntactic type, then the candidates are re-ranked using a monolingual distributional similarity metric. This metrics relies on the approximate cosine similarity scores over feature counts of the phrases and has a profound impact on the quality of the paraphrase candidate rankings. Using manual ranking of 1,000 randomly selected paraphrase sets, the addition of the monolingual filtering technique after the original translation score filter introduced a stronger positive correlation between the human rankings and the produced rankings.</c></p>
+<p style="Normal" xid="42"><c props="text-decoration:none; font-weight:normal; font-size:12pt"></c></p>
+<p style="Normal" xid="43"><c props="text-decoration:none; font-weight:normal; font-size:12pt">To tighten sentences and generate a final compressed form, Napoles et. al. use a dynamic programming strategy to find the combination of non-overlapping paraphrases that minimizes a sentence’s character length; the monolingual score is not used in any type of weighted score, but can be used as a threshold to ensure a certain level of confidence in the preservation of meaning. To choose between compressions of equal or near-equal length, two metrics are used: the word-overlap score between the original and candidate sentence, and the language model score of the compressed sentence.</c></p>
+<p style="Normal" xid="45"><c props="text-decoration:none; font-weight:normal; font-size:12pt"></c></p>
+<p style="Normal" xid="46"><c props="text-decoration:none; font-weight:normal; font-size:12pt">In initial evaluations using substitution-only and deletion-only methods, the substitution method performs poorly under all cosine-similarity thresholds between 0.65 and 0.95 at a 0.10 increment. They posit that this is due to erroneous paraphrase substitution of phrases with the same syntactic category and distributional similarity, but different semantics.</c></p>
+<p style="Normal" xid="49"><c props="text-decoration:none; font-weight:normal; font-size:12pt"></c></p>
+<p style="Normal" xid="50"><c props="text-decoration:none; font-weight:normal; font-size:12pt">In light of this sub-par showing, Napoles et. al. then tested the viability of their approach using manual labeling of good paraphrases produced by their model. Comparing substitution-only, substitution-and-deletion, and deletion-only compression methods within 5 characters of difference between their compressions, the methods involving substitution performed better than the deletion-only method in grammaticality and meaning statistics, indicating the potential for substitution-only methods given more advanced paraphrase acquisition and ranking methods.</c></p>
+<p style="Normal" xid="44"><c props="text-decoration:none; font-weight:normal; font-size:12pt"></c></p>
+<p style="Normal" xid="36"><c props="text-decoration:none; font-weight:bold; font-size:14pt">2. Deep, Multilingual Word Alignments using Cross-Domain Corpora</c></p>
+<p style="Normal" xid="38"><c props="text-decoration:none; font-weight:bold; font-size:14pt"></c></p>
+<p style="Normal" xid="39"><c props="text-decoration:none; font-weight:normal; font-size:12pt">multiple corpora = reverse-paraphrasing for low-density languages with small amounts of parallel corpora (small lang 1 with euthemisms / unique or special words (i.e. shortened words for twitter, abbreviations, slang) =&gt; small parallel lang 2 =&gt; larger corpus of parallel 2 =&gt; larger corpus of standard words in lang 1)</c></p>
+</section>
+</abiword>
