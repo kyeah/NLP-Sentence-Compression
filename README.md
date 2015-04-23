@@ -1,3 +1,9 @@
+Paraphrastic Sentence Compression
+==================================
+
+Hello! This is a WIP course research project investigating the use of deep-linking multilingual word alignments and cross-domain parallel corpora for improving paraphrastic sentence compression results. Check back around May 15 for the completed project and associated paper. :)
+
+## Rambling Plans
 1. Map of word/phrase extracted alignments using techniques of Koehn 2003
 2. For different corpora, languages
 => In Parallel + argmax combination with different languages on same corpus
