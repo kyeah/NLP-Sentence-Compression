@@ -3,6 +3,40 @@ Paraphrastic Sentence Compression
 
 Hello! This is a WIP course research project investigating the use of deep-linking multilingual word alignments and cross-domain parallel corpora for improving paraphrastic sentence compression results. Check back around May 15 for the completed project and associated paper. :)
 
+## Preparing Data
+
+### Obtaining Parallel Sentences
+The parallel corpora used are:
+* [Europarl DE-EN and FR-EN](http://www.statmt.org/europarl/)
+* [News Commentary DE-EN](http://www.statmt.org/wmt13/translation-task.html#download)
+* [de-news](http://homepages.inf.ed.ac.uk/pkoehn/publications/de-news/)
+
+Due to large file sizes, these are excluded from the final packaging.
+
+### Tokenizing
+
+To tokenize sentences from parallel corpora, a tokenizer script is provided in the root directory. 
+
+Some extra dependencies are required to run the script.
+* Download the nltk library through `sudo pip install nltk`.
+* Run `python` in the terminal, and `nltk.download()`. This will open an installion directory, from which you can install the necessary punkt tokenizer models.
+
+Finally, you can run the tokenizer script.
+
+```
+python tokenizer.py <input filename 1> <output filename 1> ...
+```
+
+### Word Alignment
+
+The unsupervised Berkeley Aligner is provided for the use of language-agnostic word alignment.
+
+### Phrase Extraction
+
+Koehn 2003 Implementation, or find another one online.
+
+### Sentence Compression
+
 ## Rambling Plans
 1. Map of word/phrase extracted alignments using techniques of Koehn 2003
 2. For different corpora, languages
