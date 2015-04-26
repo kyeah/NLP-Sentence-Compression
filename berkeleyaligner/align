@@ -6,7 +6,7 @@ if [ $# -lt 1 ]
   		exit 1
 fi
 
-OPTS="-server -mx200m -ea"
+OPTS="-server -mx2000m -ea"
 CONF=$1
 shift
 
