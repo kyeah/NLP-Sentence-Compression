@@ -1,19 +1,19 @@
 universe = vanilla
 
-InitialDir = /u/kyeh/cs/nlp-sentence-compression
-Executable = berkeleyaligner/align
+InitialDir = /u/kyeh/cs/nlp-sentence-compression/berkeleyaligner
+Executable = ./align
 
 +Group = "GRAD"
 +Project = "INSTRUCTIONAL"
 +ProjectDescription = "CS388 Sentence Compression"
 
-Log = /u/kyeh/cs/NLP/p3/condor/logs/europarl-fr.log
+Log = ../condor/logs/europarl-fr.log
 
 Notification = complete
 Notify_user = kevinyeah@utexas.edu
 
 Arguments = alignment/europarl.fr-en.conf
 
-Output = condor/logs/europarl.fr.out
-Error  = condor/logs/europarl.fr.err
+Output = ../condor/logs/europarl.fr.out
+Error  = ../condor/logs/europarl.fr.err
 Queue 1

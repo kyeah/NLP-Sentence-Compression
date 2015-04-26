@@ -1,19 +1,19 @@
 universe = vanilla
 
-InitialDir = /u/kyeh/cs/nlp-sentence-compression
-Executable = berkeleyaligner/align
+InitialDir = /u/kyeh/cs/nlp-sentence-compression/berkeleyaligner
+Executable = ./align
 
 +Group = "GRAD"
 +Project = "INSTRUCTIONAL"
 +ProjectDescription = "CS388 Sentence Compression"
 
-Log = /u/kyeh/cs/NLP/p3/condor/logs/news-commentary-de.log
+Log = ../condor/logs/news-commentary-de.log
 
 Notification = complete
 Notify_user = kevinyeah@utexas.edu
 
 Arguments = alignment/news-commentary.de-en.conf
 
-Output = condor/logs/news-commentary.de.out
-Error  = condor/logs/news-commentary.de.err
+Output = ../condor/logs/news-commentary.de.out
+Error  = ../condor/logs/news-commentary.de.err
 Queue 1
