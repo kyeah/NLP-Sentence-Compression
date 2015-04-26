@@ -27,6 +27,12 @@ Finally, you can run the tokenizer script.
 python tokenizer.py <input filename 1> <output filename 1> ...
 ```
 
+You may wish to normalize your sentences by lowercasing them.
+
+```
+cat <input> | perl lowercase.perl > <output filename>
+```
+
 ### Word Alignment
 
 The unsupervised Berkeley Aligner is provided for the use of language-agnostic word alignment.
