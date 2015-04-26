@@ -1,0 +1,12 @@
+Iterations	2
+best-aer-union-soft-1+2	0.133
+best-threshold-union-soft-1+2	0.500
+aer-union-soft-1+2	0.133
+prec-union-soft-1+2	0.840
+recall-union-soft-1+2	0.911
+best-aer-ct-union-soft-1+2	0.122
+best-threshold-ct-union-soft-1+2	0.500
+aer-ct-union-soft-1+2	0.122
+prec-ct-union-soft-1+2	0.876
+recall-ct-union-soft-1+2	0.882
+exec.status	done

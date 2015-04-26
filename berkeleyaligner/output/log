@@ -1,0 +1,98 @@
+main() {
+  Execution directory: output
+  Preparing Training Data
+  2830 training, 447 test
+  Training models: 2 stages {
+    Training stage 1: MODEL1 and MODEL1 jointly for 2 iterations {
+      Initializing forward model
+      Initializing reverse model
+      Joint Train: 2830 sentences, jointly {
+        Iteration 1/2 {
+          Sentence 1/2830
+          Sentence 2/2830
+          Sentence 3/2830
+          Sentence 1878/2830
+          Log-likelihood 1 = -318971.743
+          Log-likelihood 2 = -266197.549
+          ... 2826 lines omitted ...
+        } [1.2s, cum. 1.2s]
+        Iteration 2/2 {
+          Sentence 1/2830
+          Sentence 2/2830
+          Sentence 3/2830
+          Log-likelihood 1 = -331822.101
+          Log-likelihood 2 = -275902.970
+          ... 2827 lines omitted ...
+        } [1.2s, cum. 2.5s]
+      } [2.5s, cum. 3.5s]
+      ... 2 lines omitted ...
+    } [7.4s, cum. 7.4s]
+    Training stage 2: HMM and HMM jointly for 2 iterations {
+      Joint Train: 2830 sentences, jointly {
+        Iteration 1/2 {
+          Sentence 1/2830
+          Sentence 2/2830
+          Sentence 3/2830
+          Sentence 1156/2830
+          Log-likelihood 1 = -244370.743
+          Log-likelihood 2 = -205049.029
+          ... 2826 lines omitted ...
+        } [6.5s, cum. 6.5s]
+        Iteration 2/2 {
+          Sentence 1/2830
+          Sentence 2/2830
+          Sentence 3/2830
+          Log-likelihood 1 = -224860.561
+          Log-likelihood 2 = -176042.940
+          ... 2827 lines omitted ...
+        } [6.0s, cum. 12s]
+      } [12s, cum. 12s]
+      saveParams(output/stage2.1.params) {
+        Text
+        Binary
+      }
+      saveParams(output/stage2.2.params) {
+        Text
+        Binary
+      }
+    } [13s, cum. 21s]
+  } [21s, cum. 21s]
+  Evaluating 2 Aligners {
+    Testing SoftUnion(HMM:normal,HMM:reversed)@0.500 {
+      alignSentencePairs(447 sentences) {
+        Sentence 0/447
+        Sentence 1/447
+        Sentence 2/447
+        ... 444 lines omitted ...
+      }
+      Output alignments
+      Unaligned: 1190, 1689
+      A = 6472, S = 4038, A&S = 3678, A&P = 5434
+      Precision = 0.839617, Recall = 0.910847, AER = 0.133016, best AER = 0.133016
+    }
+    (SoftUnion(HMM:normal,HMM:reversed)@0.500, 0.5) is new max
+    Testing CompetitiveThreshold(SoftUnion(HMM:normal,HMM:reversed)@0.500) {
+      alignSentencePairs(447 sentences) {
+        Sentence 0/447
+        Sentence 1/447
+        Sentence 2/447
+        ... 444 lines omitted ...
+      }
+      Output alignments
+      Unaligned: 1413, 2132
+      A = 5778, S = 4038, A&S = 3561, A&P = 5060
+      Precision = 0.875736, Recall = 0.881872, AER = 0.121740, best AER = 0.121740
+    }
+    (CompetitiveThreshold(SoftUnion(HMM:normal,HMM:reversed)@0.500), 0.5) is new max
+    ... 1 lines omitted ...
+  } [1.3s, cum. 22s]
+  Aligning training using aligner CompetitiveThreshold(SoftUnion(HMM:normal,HMM:reversed)@0.500) {
+    Writing alignments to output/training {
+      Sentence 0
+      Sentence 1
+      Sentence 2
+      ... 2827 lines omitted ...
+    } [2.9s, cum. 2.9s]
+  } [2.9s, cum. 25s]
+  Execution directory: output
+} [25s]
