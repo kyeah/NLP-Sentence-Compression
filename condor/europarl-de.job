@@ -1,4 +1,4 @@
-B1;2802;0cuniverse = vanilla
+universe = vanilla
 
 InitialDir = /u/kyeh/cs/nlp-sentence-compression/berkeleyaligner
 Executable = ./align
