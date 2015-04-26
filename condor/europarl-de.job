@@ -1,4 +1,4 @@
-universe = vanilla
+B1;2802;0cuniverse = vanilla
 
 InitialDir = /u/kyeh/cs/nlp-sentence-compression/berkeleyaligner
 Executable = ./align
@@ -12,7 +12,7 @@ Log = ../condor/logs/europarl-de.log
 Notification = complete
 Notify_user = kevinyeah@utexas.edu
 
-Arguments = alignment/europarl.de-en.conf
+Arguments = ../alignment/europarl.de-en.conf
 
 Output = ../condor/logs/europarl.de.out
 Error  = ../condor/logs/europarl.de.err

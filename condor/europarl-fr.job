@@ -12,7 +12,7 @@ Log = ../condor/logs/europarl-fr.log
 Notification = complete
 Notify_user = kevinyeah@utexas.edu
 
-Arguments = alignment/europarl.fr-en.conf
+Arguments = ../alignment/europarl.fr-en.conf
 
 Output = ../condor/logs/europarl.fr.out
 Error  = ../condor/logs/europarl.fr.err

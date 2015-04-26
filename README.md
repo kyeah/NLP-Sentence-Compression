@@ -35,7 +35,7 @@ cat <input> | perl lowercase.perl > <output filename>
 
 ### Word Alignment
 
-The unsupervised Berkeley Aligner is provided for the use of language-agnostic word alignment.
+The unsupervised Berkeley Aligner is provided for the use of language-agnostic word alignment. Alignment may take serveral hours and a large amount of memory, so it is recommended to submit the condor jobs provided. Make sure to submit them from within the berkeleyaligner directory, and modify the absolute paths accordingly.
 
 ### Phrase Extraction
 
