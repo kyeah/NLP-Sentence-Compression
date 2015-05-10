@@ -11,7 +11,7 @@ The parallel corpora used are:
 * [News Commentary DE-EN](http://www.statmt.org/wmt13/translation-task.html#download)
 * [de-news](http://homepages.inf.ed.ac.uk/pkoehn/publications/de-news/)
 
-Due to large file sizes, these are excluded from the final packaging.
+Due to their large file sizes, the processed and unprocessed data are excluded from the final packaging.
 
 ### Tokenizing
 
@@ -33,15 +33,23 @@ You may wish to normalize your sentences by lowercasing them.
 cat <input> | perl lowercase.perl > <output filename>
 ```
 
+## Paraphrase Extraction
+
 ### Word Alignment
 
 The unsupervised Berkeley Aligner is provided for the use of language-agnostic word alignment. Alignment may take serveral hours and a large amount of memory, so it is recommended to submit the condor jobs provided. Make sure to submit them from within the berkeleyaligner directory, and modify the absolute paths accordingly.
 
-### Phrase Extraction
+### Phrase Alignment
 
-Koehn 2003 Implementation, or find another one online.
+Koehn 2003 Implementation, or find another one online. An unoptimized implementation of the word-alignment based technique found in Koehn 2003 is provided, which outputs two maps from Lang1 phrases to arrays of aligned Lang2 phrases.
 
-### Sentence Compression
+```
+python phrase_aligner.py <srcfile> <trgfile> <word alignment file> <srcdict filename> <trgdict filename>
+```
+
+### Extracting Paraphrases
+
+
 
 ## Rambling Plans
 1. Map of word/phrase extracted alignments using techniques of Koehn 2003
