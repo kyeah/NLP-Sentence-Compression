@@ -34,10 +34,8 @@ def align_phrases(srctext, trgtext, alignment):
         # Iterate over foreign alignment starting point
         while True:
             fe = f_end
-
             # Iterate over foreign alignment endpoint
             while True:
-
                 # Add phrase pair ([e_start, e_end], [fs, fe]) to set of phrases
                 src_phrase = " ".join(srctext[i] for i in range(e_start,e_end+1))
                 trg_phrase = " ".join(trgtext[i] for i in range(fs,fe+1))

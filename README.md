@@ -10,8 +10,9 @@ The parallel corpora used are:
 * [Europarl DE-EN and FR-EN](http://www.statmt.org/europarl/)
 * [News Commentary DE-EN](http://www.statmt.org/wmt13/translation-task.html#download)
 * [de-news](http://homepages.inf.ed.ac.uk/pkoehn/publications/de-news/)
+* [Bible DE-SP and SP-EN](http://homepages.inf.ed.ac.uk/s0787820/bible/)
 
-Due to their large file sizes, the processed and unprocessed data are excluded from the final packaging.
+Due to their large file sizes, these corpora are excluded from the final packaging.
 
 ### Tokenizing
 
