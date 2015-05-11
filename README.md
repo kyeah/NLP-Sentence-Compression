@@ -65,8 +65,9 @@ Parallel: Basic single-corpus extraction using multiple corpora.
 
 ### Ranking Paraphrases
 
-To rank paraphrases, a semantic space model was used using the [S-Space](https://github.com/fozziethebeat/S-Space) project. I used the LatentSemanticAnalysis model trained on the [Open American National Corpus](http://www.anc.org/data/oanc).
+To rank paraphrases, an implementation of WordNet-based distributional similarity was used ([gangeli:sim](https://github.com/gangeli/sim)). Then, you can run similarity tests with the following commands:
 
-Before using the LSA model, a Singular Value Decomposition program is required. There is a recommended list [here](https://github.com/fozziethebeat/S-Space/wiki/SingularValueDecomposition). I used the SVDLIBC system.
-
-To build the S-Space project, cd into the directory and run 'mvn compile'.
+```
+javac -cp sim/dist/sim-release.jar ParaphraseRanker.java
+java -cp sim/dist/sim-release.jar:. -Dwordnet.database.dir=sim/etc/WordNet-3.1/dict -mx3g ParaphraseRanker
+```
