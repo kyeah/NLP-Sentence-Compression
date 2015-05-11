@@ -7,13 +7,13 @@ This script acquiries paraphrases over phrase-aligned dictionaries generated
 from parallel bilingual corpora.
 
 Depth 1: Bilingual single-corpus or cross-domain paraphrase extraction.
-  e.g. python paraphraser.py <en-de> <de-en>
+  e.g. python paraphraser.py 1 <en-de> <de-en>
 
 Depth 2+: Deep-linking paraphrase extraction across multiple languages.
-  e.g. python paraphraser.py <en-de> <de-sp> <sp-en>
+  e.g. python paraphraser.py 2 <en-de> <de-sp> <sp-en>
 
 Parallel: Basic single-corpus extraction using multiple corpora.
-  e.g. python paraphraser.py <en-de> <de-en> <en-fr> <fr-en> ...
+  e.g. python paraphraser.py parallel <en-de> <de-en> <en-fr> <fr-en> ...
 """
 
 def find_paraphrases_in_series(phrase, dicts):

@@ -50,18 +50,23 @@ python phrase_aligner.py <srcfile> <trgfile> <word alignment file> <srcdict file
 
 ### Extracting Paraphrases
 
+To extract paraphrases, a universal script is provided for basic, parallel, and deep-linking paraphrase acquisition over the generated phrase-aligned dictionaries. These dictionaries are the JSON-formatted files produced in the previous step.
 
+```
+Depth 1: Bilingual single-corpus or cross-domain paraphrase extraction.
+  e.g. python paraphraser.py 1 <en-de> <de-en>
 
-## Rambling Plans
-1. Map of word/phrase extracted alignments using techniques of Koehn 2003
-2. For different corpora, languages
-=> In Parallel + argmax combination with different languages on same corpus
-=> In Series with multiple corpora (deep linking)
-   -- Same domain vs. cross-domain paraphrasing (Future work: Twitter, translation into microblogging forms of communication etc.)
-=> Combination of the two (Multiple different languages to start with, ORDERING of languages within series)
+Depth 2+: Deep-linking paraphrase extraction across multiple languages.
+  e.g. python paraphraser.py 2 <en-de> <de-sp> <sp-en>
 
-http://stackoverflow.com/questions/25109001/phrase-extraction-algorithm-for-statistical-machine-translation
+Parallel: Basic single-corpus extraction using multiple corpora.
+  e.g. python paraphraser.py parallel <en-de> <de-en> <en-fr> <fr-en> ...
+```
 
-Twitter Decompression is possible, but existing corpora cannot publically provide tweets, leading to many mining problems.
-=> Rate limiting limits the ability to mine these tweets in a reasonable time span, especially for an academic project.
-=> Many of the tweets have been deleted for one reason or another, drastically reducing the size of the corpus.
+### Ranking Paraphrases
+
+To rank paraphrases, a semantic space model was used using the [S-Space](https://github.com/fozziethebeat/S-Space) project. I used the LatentSemanticAnalysis model trained on the [Open American National Corpus](http://www.anc.org/data/oanc).
+
+Before using the LSA model, a Singular Value Decomposition program is required. There is a recommended list [here](https://github.com/fozziethebeat/S-Space/wiki/SingularValueDecomposition). I used the SVDLIBC system.
+
+To build the S-Space project, cd into the directory and run 'mvn compile'.
