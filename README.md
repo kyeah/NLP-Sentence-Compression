@@ -58,13 +58,13 @@ To extract paraphrases, a universal script is provided for basic, parallel, and 
 
 ```
 Depth 1: Bilingual single-corpus or cross-domain paraphrase extraction.
-  e.g. python paraphraser.py 1 <en-de> <de-en>
+  e.g. python paraphraser.py 1 data/phrases.txt <en-de> <de-en>
 
 Depth 2+: Deep-linking paraphrase extraction across multiple languages.
-  e.g. python paraphraser.py 2 <en-de> <de-sp> <sp-en>
+  e.g. python paraphraser.py 2 data/phrases.txt <en-de> <de-sp> <sp-en>
 
 Parallel: Basic single-corpus extraction using multiple corpora.
-  e.g. python paraphraser.py parallel <en-de> <de-en> <en-fr> <fr-en> ...
+  e.g. python paraphraser.py parallel data/phrases.txt <en-de> <de-en> <en-fr> <fr-en> ...
 ```
 
 ### Ranking Paraphrases
