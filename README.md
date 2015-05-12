@@ -12,7 +12,11 @@ The parallel corpora used are:
 * [de-news](http://homepages.inf.ed.ac.uk/pkoehn/publications/de-news/)
 * [Bible DE-SP and SP-EN](http://homepages.inf.ed.ac.uk/s0787820/bible/)
 
-Due to their large file sizes, these corpora are excluded from the final packaging.
+Due to their large file sizes, these corpora are excluded from the final packaging. The Bible corpora need to be pre-processed out of the initial XML format, which can be done with the following command:
+
+```
+python bible_parser.py <xmlfile> <outputfile>
+```
 
 ### Tokenizing
 
@@ -69,5 +73,5 @@ To rank paraphrases, an implementation of WordNet-based distributional similarit
 
 ```
 javac -cp sim/dist/sim-release.jar ParaphraseRanker.java
-java -cp sim/dist/sim-release.jar:. -Dwordnet.database.dir=sim/etc/WordNet-3.1/dict -mx3g ParaphraseRanker
+java -cp sim/dist/sim-release.jar:. -Dwordnet.database.dir=sim/etc/WordNet-3.1/dict -mx3g ParaphraseRanker <paraphrase file>
 ```

@@ -66,13 +66,13 @@ if depth != "parallel":
         sys.exit(0)
 
 # Read in test phrases
-with f as open(sys.argv[2], 'r'):
+with open(sys.argv[2], 'r') as f:
     while line = f.readLine():
         init_phrases.append(line.rstrip())
 
 # Read in phrase-aligned dictionaries
 for fn in sys.argv[3:4+depth]:
-    with f as open(fn, 'r'):
+    with open(fn, 'r') as f:
         dicts.append(json.load(f))
 
 # Acquire paraphrases

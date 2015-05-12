@@ -1,0 +1,19 @@
+universe = vanilla
+
+InitialDir = /u/kyeh/cs/nlp-sentence-compression/berkeleyaligner
+Executable = ./align
+
++Group = "GRAD"
++Project = "INSTRUCTIONAL"
++ProjectDescription = "CS388 Sentence Compression"
+
+Log = ../condor/logs/bible-de.log
+
+Notification = complete
+Notify_user = kevinyeah@utexas.edu
+
+Arguments = ../alignment/bible.de-sp.conf
+
+Output = ../condor/logs/bible.de.out
+Error  = ../condor/logs/bible.de.err
+Queue 1
