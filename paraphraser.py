@@ -83,3 +83,9 @@ for phrase in init_phrases:
     else:
         phrases = find_paraphrases_in_series(phrases, dicts)
     paraphrases[phrase] = phrases
+
+for key in paraphrases:
+    print "Phrase:", key
+    for phrase in paraphrases[key]:
+        print phrase
+        print ""
