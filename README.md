@@ -11,7 +11,7 @@ The parallel corpora used are:
 * [News Commentary DE-EN](http://www.statmt.org/wmt13/translation-task.html#download)
 * [Bible DE-SP and SP-EN](http://homepages.inf.ed.ac.uk/s0787820/bible/)
 
-Due to their large file sizes, these corpora are excluded from the final packaging. The Bible corpora need to be pre-processed out of the initial XML format, which can be done with the following command:
+The Bible corpora needs to be pre-processed out of the initial XML format, which can be done with the following command:
 
 ```
 python bible_parser.py <xmlfile> <outputfile>
