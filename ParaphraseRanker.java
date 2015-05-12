@@ -23,6 +23,7 @@ public class PhraseRanker {
                 System.out.println("Phrase: " + phrase);
                 System.out.println("PP: " + line);
                 System.out.println("Sim: " + sim.cos());
+                System.out.println("");
             }
         }
         
