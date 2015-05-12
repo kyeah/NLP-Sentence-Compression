@@ -69,7 +69,7 @@ Parallel: Basic single-corpus extraction using multiple corpora.
 
 ### Ranking Paraphrases
 
-To rank paraphrases, an implementation of WordNet-based distributional similarity was used ([gangeli:sim](https://github.com/gangeli/sim)). Then, you can run similarity tests with the following commands:
+To rank paraphrases, an implementation of WordNet-based distributional similarity was used ([gangeli:sim](https://github.com/gangeli/sim)). You can run similarity tests with the following commands:
 
 ```
 javac -cp sim/dist/sim-release.jar ParaphraseRanker.java
