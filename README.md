@@ -1,7 +1,7 @@
 Paraphrastic Sentence Compression
 ==================================
 
-Hello! This is a WIP course research project investigating the use of deep-linking multilingual word alignments and cross-domain parallel corpora for improving paraphrastic sentence compression results. Check back around May 15 for the completed project and associated paper. :)
+This is a course research project for NLP investigating the use of deep-linking bilingual phrase alignments and cross-domain parallel corpora for improving paraphrastic sentence compression results.
 
 ## Preparing Data
 
