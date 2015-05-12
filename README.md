@@ -9,7 +9,6 @@ This is a course research project for NLP investigating the use of deep-linking 
 The parallel corpora used are:
 * [Europarl DE-EN and FR-EN](http://www.statmt.org/europarl/)
 * [News Commentary DE-EN](http://www.statmt.org/wmt13/translation-task.html#download)
-* [de-news](http://homepages.inf.ed.ac.uk/pkoehn/publications/de-news/)
 * [Bible DE-SP and SP-EN](http://homepages.inf.ed.ac.uk/s0787820/bible/)
 
 Due to their large file sizes, these corpora are excluded from the final packaging. The Bible corpora need to be pre-processed out of the initial XML format, which can be done with the following command:
