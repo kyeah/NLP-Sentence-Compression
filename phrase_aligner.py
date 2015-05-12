@@ -8,8 +8,6 @@ import json
 This is a non-optimized implementation of the phrase alignment method described in Koehn (2003).
 It utilizes word alignments and incrementally builds longer phrases from words and phrases with
 adjacent alignment points.
-
-Author: Kevin Yeh
 """
 def align_phrases(srctext, trgtext, alignment):
 
@@ -126,38 +124,3 @@ with sf as open(srcdict, 'w')):
 
 with tf as open(trgdict, 'w')):
     json.dumpflist, sf)
-
-# Refer to match matrix.
-#             0      1      2   3  4     5   6   7    8
-#srctext = "michael assumes that he will stay in the house"
-#             0      1    2    3  4  5   6  7   8     9
-#trgtext = "michael geht davon aus , dass er im haus bleibt"
-#alignment = [(0,0), (1,1), (1,2), (1,3), (2,5), (3,6), (4,9), (5,9), (6,7), (7,7), (8,8)]
-
-#phrases = phrase_extraction(srctext, trgtext, alignment)
-
-# Keep track of translations of each phrase in srctext and its
-# alignement using a dictionary with keys as phrases and values being
-# a list [e_alignement pair, [f_extractions, ...] ]
-
-
-##dlist = {}
-##for p, a, b in phrases:
-##    if a in dlist:
-##        dlist[a][1].append(b)
-##    else:
-##        dlist[a] = [p, [b]]
-
-# Sort the list of translations based on their length.  Shorter phrases first.
-##for v in dlist.values():
-##    v[1].sort(key=lambda x: len(x))
-
-
-# Function to help sort according to book example.
-##def ordering(p):
-##    k,v = p
-##    return v[0]
-#
-##for i, p in enumerate(sorted(dlist.items(), key = ordering), 1):
-##    k, v = p
-##    print "({0:2}) {1} {2} — {3}".format( i, v[0], k, " ; ".join(v[1]))

@@ -42,11 +42,6 @@ def find_paraphrases_in_series(phrase, dicts):
 
     return phrases
 
-def rank_phrases():
-    """
-    Rank paraphrases using a monolingual distributional similarity metric
-    """
-
 """
 Command entry point.
 """
